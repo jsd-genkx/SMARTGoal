@@ -1,17 +1,21 @@
 document.getElementById("smartGoalForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const specific = document.getElementById("specific").value;
-  const measurable = document.getElementById("measurable").value;
-  const achievable = document.getElementById("achievable").value;
-  const relevant = document.getElementById("relevant").value;
-  const timebound = document.getElementById("timebound").value;
+  const smartGoal = document.getElementById("smartGoal").value;
+  const stepsTimeframe = document.getElementById("stepsTimeframe").value;
+  const challenges = document.getElementById("challenges").value;
+  const strategies = document.getElementById("strategies").value;
+  const tools = document.getElementById("tools").value;
+  const people = document.getElementById("people").value;
+  const progress = document.getElementById("progress").value;
 
-  document.getElementById("resultSpecific").textContent = specific;
-  document.getElementById("resultMeasurable").textContent = measurable;
-  document.getElementById("resultAchievable").textContent = achievable;
-  document.getElementById("resultRelevant").textContent = relevant;
-  document.getElementById("resultTimebound").textContent = timebound;
+  document.getElementById("resultSmartGoal").textContent = smartGoal;
+  document.getElementById("resultStepsTimeframe").textContent = stepsTimeframe;
+  document.getElementById("resultChallenges").textContent = challenges;
+  document.getElementById("resultStrategies").textContent = strategies;
+  document.getElementById("resultTools").textContent = tools;
+  document.getElementById("resultPeople").textContent = people;
+  document.getElementById("resultProgress").textContent = progress;
 
   document.getElementById("result").classList.remove("hidden");
 });

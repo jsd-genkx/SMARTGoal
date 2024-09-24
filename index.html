@@ -10,32 +10,42 @@
     <div class="container">
       <h1>SMART Goal Setting Form</h1>
       <form id="smartGoalForm">
-        <label for="specific">Specific Goal:</label>
-        <textarea id="specific" placeholder="What do you want to accomplish?" required></textarea>
+        <h2>MY SMART GOAL</h2>
+        <textarea id="smartGoal" placeholder="What is your SMART goal?" required></textarea>
 
-        <label for="measurable">Measurable:</label>
-        <textarea id="measurable" placeholder="How will you measure success?" required></textarea>
+        <h2>STEPS & TIMEFRAME: Things I can do today and everyday</h2>
+        <textarea id="stepsTimeframe" placeholder="Describe your steps and timeframe." required></textarea>
 
-        <label for="achievable">Achievable:</label>
-        <textarea id="achievable" placeholder="How will you achieve this goal?" required></textarea>
+        <h2>CHALLENGES: Problems I might face</h2>
+        <textarea id="challenges" placeholder="What challenges might you face?" required></textarea>
 
-        <label for="relevant">Relevant:</label>
-        <textarea id="relevant" placeholder="Why is this goal important to you?" required></textarea>
+        <h2>STRATEGIES: How I will overcome my problems</h2>
+        <textarea id="strategies" placeholder="What strategies will help you overcome challenges?" required></textarea>
 
-        <label for="timebound">Time-bound:</label>
-        <textarea id="timebound" placeholder="What is the deadline?" required></textarea>
+        <h2>TOOLS: Things I can use to reach my goals</h2>
+        <textarea id="tools" placeholder="List the tools you can use to achieve your goal." required></textarea>
+
+        <h2>PEOPLE: Individuals who can help</h2>
+        <textarea id="people" placeholder="Who can help you in achieving your goal?" required></textarea>
+
+        <h2>PROGRESS: How and when I will check my progress</h2>
+        <textarea id="progress" placeholder="How will you track your progress?" required></textarea>
 
         <button type="submit">Submit Goal</button>
       </form>
+
       <div id="result" class="hidden">
-        <h2>Your SMART Goal</h2>
-        <p><strong>Specific:</strong> <span id="resultSpecific"></span></p>
-        <p><strong>Measurable:</strong> <span id="resultMeasurable"></span></p>
-        <p><strong>Achievable:</strong> <span id="resultAchievable"></span></p>
-        <p><strong>Relevant:</strong> <span id="resultRelevant"></span></p>
-        <p><strong>Time-bound:</strong> <span id="resultTimebound"></span></p>
+        <h2>Your SMART Goal Summary</h2>
+        <p><strong>SMART Goal:</strong> <span id="resultSmartGoal"></span></p>
+        <p><strong>Steps & Timeframe:</strong> <span id="resultStepsTimeframe"></span></p>
+        <p><strong>Challenges:</strong> <span id="resultChallenges"></span></p>
+        <p><strong>Strategies:</strong> <span id="resultStrategies"></span></p>
+        <p><strong>Tools:</strong> <span id="resultTools"></span></p>
+        <p><strong>People:</strong> <span id="resultPeople"></span></p>
+        <p><strong>Progress:</strong> <span id="resultProgress"></span></p>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
