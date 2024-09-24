@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMART Goal Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>SMART Goal Setting Form</h1>
+      <form id="smartGoalForm">
+        <label for="specific">Specific Goal:</label>
+        <textarea id="specific" placeholder="What do you want to accomplish?" required></textarea>
+
+        <label for="measurable">Measurable:</label>
+        <textarea id="measurable" placeholder="How will you measure success?" required></textarea>
+
+        <label for="achievable">Achievable:</label>
+        <textarea id="achievable" placeholder="How will you achieve this goal?" required></textarea>
+
+        <label for="relevant">Relevant:</label>
+        <textarea id="relevant" placeholder="Why is this goal important to you?" required></textarea>
+
+        <label for="timebound">Time-bound:</label>
+        <textarea id="timebound" placeholder="What is the deadline?" required></textarea>
+
+        <button type="submit">Submit Goal</button>
+      </form>
+      <div id="result" class="hidden">
+        <h2>Your SMART Goal</h2>
+        <p><strong>Specific:</strong> <span id="resultSpecific"></span></p>
+        <p><strong>Measurable:</strong> <span id="resultMeasurable"></span></p>
+        <p><strong>Achievable:</strong> <span id="resultAchievable"></span></p>
+        <p><strong>Relevant:</strong> <span id="resultRelevant"></span></p>
+        <p><strong>Time-bound:</strong> <span id="resultTimebound"></span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
